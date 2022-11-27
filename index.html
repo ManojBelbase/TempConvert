@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Convertor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+<form id="tempCalc" onsubmit="claculateTemp(); return false">
+
+    <label for="temp">Please Enter the Temperature you'd like to convert.</label><br><br>
+    <input type="number" id="temp" name="temp">
+    <select name="temp_diff" id="temp_diff">
+        <option value="cel">℃elcius</option>
+        <option value="fah">℉ahrenheit</option>
+    </select><br><br>
+    <input type="submit" name="temp"><br><br>
+    <span id="resultContainer"></span>
+</form>
+</body>
+<script src="./script.js"></script>
+</html>
